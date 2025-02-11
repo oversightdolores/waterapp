@@ -22,6 +22,13 @@ DerivedData
 *.xcuserstate
 **/.xcode.env.local
 
+# 🔒 Ignorar archivos de PostgreSQL y Sequelize
+server/migrations/
+server/seeders/
+server/sequelize-meta.json
+server/db.sqlite
+
+
 # Android/IntelliJ
 #
 build/
