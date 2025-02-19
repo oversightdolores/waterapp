@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import {connectDB} from './config/db';
 import pedidoRoutes from './routes/pedido.routes'; // Cambiado a pedido.routes
 import usuarioRoutes from './routes/usuario.routes';
+import productoRoutes from './routes/product.routes';
 import morgan from 'morgan';
 
 dotenv.config();
@@ -18,5 +19,6 @@ app.use(morgan("dev"));
 // Rutas correctas
 app.use('/api/pedidos', pedidoRoutes);
 app.use('/api/usuarios', usuarioRoutes);
+app.use('/api/productos', productoRoutes);
 
 export default app;
